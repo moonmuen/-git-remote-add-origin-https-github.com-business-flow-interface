@@ -1,0 +1,28 @@
+// 颜色系统
+$colors: (
+  'primary': (
+    'base': #409EFF,
+    'light': #79BBFF,
+    'lighter': #A0CFFF,
+    'dark': #337ECC,
+    'darker': #2B69B1
+  ),
+  'text': (
+    'primary': #303133,
+    'regular': #606266,
+    'secondary': #909399,
+    'placeholder': #A8ABB2
+  ),
+  'border': (
+    'base': #DCDFE6,
+    'light': #E4E7ED,
+    'lighter': #EBEEF5,
+    'extra-light': #F2F6FC,
+    'divider': #DCDFE6
+  )
+);
+
+@function color($type, $variant: 'base') {
+  $color-map: map-get($colors, $type);
+  @return map-get($color-map, $variant);
+} 

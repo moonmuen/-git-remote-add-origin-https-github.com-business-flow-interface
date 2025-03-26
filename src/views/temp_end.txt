@@ -1,0 +1,100 @@
+</script>
+
+<style lang="scss" scoped>
+/* 从input.scss导入样式 */
+@import url('/Users/comnova/Desktop/corsor通用/components/input/input.scss');
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #f0f2f5;
+  
+  .main-header {
+    height: 48px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    
+    .logo {
+      font-size: 18px;
+      font-weight: 600;
+    }
+    
+    .header-right {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      
+      .user-info {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        
+        .user-avatar {
+          background-color: #1677ff;
+        }
+      }
+    }
+  }
+  
+  .main-container {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+    
+    .sidebar {
+      width: 190px;
+      height: 100%;
+      background-color: #fff;
+      border-right: 1px solid #ebeef5;
+      
+      .sidebar-menu {
+        border-right: none;
+        height: 100%;
+      }
+      
+      .active-menu {
+        color: #1677ff;
+        background-color: #e6f7ff;
+      }
+      
+      .menu-icon {
+        width: 20px !important;
+        height: 20px !important;
+        margin-right: 8px;
+      }
+    }
+    
+    .main-content {
+      flex: 1;
+      padding: 16px;
+      overflow: auto;
+      background-color: #f0f2f5;
+      
+      /* 调整创建按钮样式 */
+      .create-button-row {
+        padding: 12px 0;
+        display: flex;
+        justify-content: flex-start;
+      }
+      
+      .normal-create-btn {
+        height: 32px;
+        font-size: 14px;
+        padding: 0 16px;
+      }
+      
+      /* 优化搜索区域样式 */
+      .search-area {
+        background-color: #fff;
+        border-radius: 4px;
+        padding: 16px;
+        margin-bottom: 16px;
+      }
+      
