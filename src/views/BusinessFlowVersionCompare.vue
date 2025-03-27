@@ -61,7 +61,7 @@
                 <div class="comparison-col">
                   <h3>原始界面</h3>
                   <div class="screenshot">
-                    <img src="../assets/original-ui.png" alt="原始界面" class="ui-image" />
+                    <div class="ui-image placeholder-image">原始界面图片</div>
                     <div class="overlay">
                       <p>原始版本使用简单布局，基础表格展示，没有搜索和分页功能</p>
                     </div>
@@ -70,7 +70,7 @@
                 <div class="comparison-col">
                   <h3>优化界面</h3>
                   <div class="screenshot">
-                    <img src="../assets/optimized-ui.png" alt="优化界面" class="ui-image" />
+                    <div class="ui-image placeholder-image">优化界面图片</div>
                     <div class="overlay">
                       <p>优化版本使用卡片布局，美观的表格展示，支持搜索、分页和更多操作</p>
                     </div>
@@ -82,7 +82,7 @@
                 <div class="comparison-col">
                   <h3>步骤式界面</h3>
                   <div class="screenshot">
-                    <img src="../assets/steps-ui.png" alt="步骤式界面" class="ui-image" />
+                    <div class="ui-image placeholder-image">步骤式界面图片</div>
                     <div class="overlay">
                       <p>步骤式版本使用步骤条引导用户完成配置，提供更清晰的操作流程</p>
                     </div>
@@ -91,7 +91,7 @@
                 <div class="comparison-col">
                   <h3>原型设计界面</h3>
                   <div class="screenshot">
-                    <img src="../assets/prototype-ui.png" alt="原型设计界面" class="ui-image" />
+                    <div class="ui-image placeholder-image">原型设计界面图片</div>
                     <div class="overlay">
                       <p>原型设计版本完全符合设计规范，包含完整的菜单结构和业务功能</p>
                     </div>
@@ -336,6 +336,16 @@ const loadPrototypeVersion = () => {
                 width: 100%;
                 height: auto;
                 display: block;
+              }
+              
+              .placeholder-image {
+                height: 200px;
+                background-color: #f5f7fa;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #909399;
+                font-size: 16px;
               }
               
               .overlay {
